@@ -1,0 +1,3 @@
+curl localhost:8083/connectors | jq
+curl -X DELETE -H "Content-type: application/json" http://localhost:8083/connectors/twitter_source_json | jq
+curl -sX POST http://localhost:8083/connectors -d @twitter_01.json --header "Content-Type: application/json" | jq
